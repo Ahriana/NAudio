@@ -76,5 +76,10 @@ namespace NAudio.Midi
             writer.Write(data, 0, data.Length);
             writer.Write((byte)0xF7);
         }
+
+        public byte[] GetData ()
+        {
+            return data;
+        }
     }
 }
